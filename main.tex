@@ -1,0 +1,41 @@
+\documentclass[9pt]{article}
+\usepackage[russian]{babel}
+
+\usepackage{blindtext}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+
+\usepackage[letterpaper,top=1.5cm,bottom=1cm,left=1.5cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\pagestyle {empty}
+
+\begin{document}
+\input{intro}
+\newpage
+\fancypagestyle{mystyle}{
+\vspace{5mm}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headsep}{0pt}
+\fancyhead{} % clear all header fields
+\fancyhead[LO,LE]{22}
+\fancyhead[CO]{\textbf{КВАНТ} $\cdot$ \textcolor{gray}{\textit{2015/№3}}}
+\fancyfoot[C]{}
+}
+\thispagestyle{mystyle}
+\input{article}
+\newpage
+\input{automato}
+\end{document}
